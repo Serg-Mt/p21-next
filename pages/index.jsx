@@ -10,7 +10,7 @@ export default function HomePage() {
     <StateDiff />
     <Input />
     <hr />
-    <h1>Hello, Next.js!</h1>
+    <h1>Hello, Next.js!!!!!!</h1>
     <hr />
     class:
     <LikeButton1 color="green" start="100" />
