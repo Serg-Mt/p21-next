@@ -1,0 +1,16 @@
+.big {
+  font-size:x-large;
+}
+
+.like {
+  display: block;
+  margin: 8px;
+}
+
+.green {
+  background-color: lightgreen;
+}
+
+.border {
+  outline: 3px solid green;
+}
