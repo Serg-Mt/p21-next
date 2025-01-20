@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: aquamarine;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    li {
+      padding: .5em;
+      flex-grow: 1;
+      text-align: center;
+      &:hover {
+        background-color: aqua;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: aquamarine;
+  padding: .5em;
+}
+
+main {
+  padding: .5em;
+}
