@@ -3,10 +3,15 @@ import { Input } from '../components/Input';
 import { LikeButton as LikeButton1 } from '../components/LikeButton_class';
 import { LikeButton } from '../components/LikeButton_func';
 import { StateDiff } from '../components/StateDiff';
+import { TestUseRef, TestUseRef2 } from '../components/TestUseRef';
+import { TwoButton } from '../components/TwoButtons';
 
 
 export default function HomePage() {
   return <>
+    <TwoButton />
+    <TestUseRef2 />
+    <TestUseRef />
     <StateDiff />
     <Input />
     <hr />
