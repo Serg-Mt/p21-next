@@ -8,7 +8,7 @@ class ToDoItem {
     Object.assign(this, { text }); // this.text = text
   }
 
-  toggle() {
+  toggle() { // потенциальная проблема
     this.checked = !this.checked;
     return this;
   }
@@ -24,6 +24,8 @@ class ToDoList extends Array {
   addItem(text) {
     return new ToDoList(...this, new ToDoItem(text));
   }
+  // Внимание! старые методы( this.map this.filter...) вернут экземпляр ToDoList,
+  // но новые (this.toSorted, this.with) вернут просто массив (без методов addItem, delItem...)
   delItem(id) {
     return this.filter(ToDoList.isNotEqualId(id)) // return this.filter(item=>item.id !== id)
   }
