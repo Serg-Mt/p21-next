@@ -8,7 +8,7 @@ class ToDoItem {
     Object.assign(this, { text }); // this.text = text
   }
 
-  toggle() { 
+  toggle() {
     const
       clone = this.clone()
     clone.checked = !this.checked;
@@ -20,7 +20,7 @@ class ToDoItem {
   }
 }
 
-class ToDoList extends Array {
+export class ToDoList extends Array {
   static isNotEqualId(id) {
     return item => item.id !== id;
   }

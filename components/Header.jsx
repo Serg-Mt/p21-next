@@ -5,16 +5,17 @@ const pages = [
   { href: '/about', title: 'About' },
   { href: '/user-list', title: 'User List (jsph)' },
   { href: '/todo', title: 'ToDo List' },
+  { href: '/todo-delegation', title: 'ToDo delegation' }
 ];
 
 export function Header() {
   return <header>
     <nav>
       <ul>
-        {pages.map(({href,title})=>
-        <li key={href}>
-          <Link href={href}>{title}</Link>
-        </li>)
+        {pages.map(({ href, title }) =>
+          <li key={href}>
+            <Link href={href}>{title}</Link>
+          </li>)
         }
       </ul>
     </nav>
