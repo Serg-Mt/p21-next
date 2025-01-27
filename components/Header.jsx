@@ -2,10 +2,10 @@ import Link from 'next/link';
 
 const pages = [
   { href: '/', title: 'Home' },
-  { href: '/about', title: 'About' },
   { href: '/user-list', title: 'User List (jsph)' },
   { href: '/todo', title: 'ToDo List' },
-  { href: '/todo-delegation', title: 'ToDo delegation' }
+  { href: '/todo-delegation', title: 'ToDo delegation' },
+  { href: '/calendar', title: 'Calendar' },
 ];
 
 export function Header() {
