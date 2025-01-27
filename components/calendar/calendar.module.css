@@ -1,3 +1,11 @@
+.dateselector {
+  border: 1px solid gray;
+  text-align: right;
+  &::after{
+    content: '📅';
+  }
+}
+
 table.calendar {
   /* background-color: aqua; */
   border-collapse: collapse;
@@ -9,7 +17,21 @@ table.calendar {
   }
 
   & .selected {
-    background-color: lime;
+    background-color: skyblue;
     border-radius: 50%;
+  }
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  box-shadow: 0 0 20px 3px gray;
+  background-color: Canvas;
+  .close {
+    align-self: flex-end;
+  }
+  &:has(.calendar)>:not(.close) {
+    margin: 0.1em 1em;
   }
 }
